@@ -210,8 +210,8 @@ async function main() {
   
   const teamMemberTimeEntries = {};
 
-  for (const userName in team) {
-    const user = team[userName];
+  for (const userName in teamObj) {
+    const user = teamObj[userName];
     const userId = user.id;
     const timeEntries = await fetchAllTimeEntries(userId);
 
